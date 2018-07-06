@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ASarTaLine</string>
+    <string name="search">Search Restaurant</string>
+    <string name="details_title">White sauce pasta with vegetable</string>
+    <string name="details_desc">This is because there were two returns between the beginning declaration of the string and the new line. I also added the to it for clarity, as either can be used. I like to use the carriage returns in the xml to be able to see a list or whatever multiline string I have. My two cents.</string>
+</resources>

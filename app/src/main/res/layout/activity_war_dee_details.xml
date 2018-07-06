@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <!-- <android.support.design.widget.AppBarLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:fitsSystemWindows="true">
+
+         <android.support.design.widget.CollapsingToolbarLayout
+             android:layout_width="match_parent"
+             android:layout_height="300dp"
+             app:contentScrim="@color/primary"
+             app:layout_scrollFlags="scroll|exitUntilCollapsed">-->
+
+    <ImageView
+        android:id="@+id/iv_details"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/details_img_height"
+        android:fitsSystemWindows="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pizza_shop" />
+
+    <!--<android.support.v7.widget.Toolbar
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:fitsSystemWindows="true"
+        app:layout_collapseMode="pin" />-->
+
+
+    <!-- </android.support.design.widget.CollapsingToolbarLayout>
+ </android.support.design.widget.AppBarLayout>-->
+
+
+    <!-- <android.support.v4.widget.NestedScrollView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_marginTop="@dimen/margin_medium"
+         app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+
+    <!-- <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_medium_2"
+        android:layout_marginLeft="@dimen/margin_medium_2"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:weightSum="2">
+
+        <org.mmtextview.components.MMTextView
+            android:id="@+id/tv_title_details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:layout_weight="2"
+            android:paddingBottom="@dimen/margin_medium"
+            android:paddingTop="@dimen/margin_medium"
+            android:text="@string/details_title"
+            android:textSize="@dimen/text_regular_3x" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_medium_2"
+            android:background="@drawable/roundedbutton_16dp"
+            android:text="£269" />
+
+    </LinearLayout>
+
+    <org.mmtextview.components.MMTextView
+        android:id="@+id/details_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear"
+        android:layout_marginLeft="@dimen/margin_medium_2"
+        android:layout_marginTop="@dimen/margin_xxlarge"
+        android:text="@string/details_desc" />
+
+
+    <TextView
+        android:id="@+id/tv_eg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/details_description"
+        android:layout_marginBottom="@dimen/margin_medium_2"
+        android:layout_marginLeft="@dimen/margin_medium_2"
+        android:layout_marginTop="@dimen/margin_xxlarge"
+        android:text="Add a note(extra sauce,no anions, etc)" />
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tv_eg"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:background="@color/secondary_text" />
+
+    <LinearLayout
+        android:id="@+id/linear_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/v_line"
+        android:layout_marginBottom="@dimen/margin_medium_2"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:gravity="bottom"
+        >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_small"
+            android:layout_weight="1"
+            android:background="@color/primary"
+            android:paddingBottom="@dimen/margin_medium_2"
+            android:paddingTop="@dimen/margin_medium_2"
+            android:text="- 2 +" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:layout_weight="3"
+            android:background="@color/primary"
+            android:paddingBottom="@dimen/margin_medium_2"
+            android:paddingTop="@dimen/margin_medium_2"
+            android:text="ADD TO CART" />
+    </LinearLayout>
+    <!-- </RelativeLayout>-->
+
+
+
+</LinearLayout>
